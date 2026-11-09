@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Questionário interativo para testar seus conhecimentos sobre segurança digital.">
+  <title>Questionário | Segurança Digital para Todos</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <p class="site-title"><a href="../index.html">Segurança Digital para Todos</a></p>
+    <nav aria-label="Navegação principal">
+      <ul>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="golpes.html">Golpes virtuais</a></li>
+        <li><a href="senhas.html">Senhas e autenticação</a></li>
+        <li><a href="privacidade.html">Privacidade</a></li>
+        <li><a href="seguranca.html">Segurança na internet</a></li>
+        <li><a href="questionario.html" aria-current="page">Questionário</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <h1>Questionário interativo</h1>
+    <p>Teste o que você aprendeu nas páginas do site. São 12 perguntas de múltipla escolha, uma por vez, com explicação depois de cada resposta. Suas respostas não são guardadas nem enviadas para ninguém.</p>
+
+    <noscript>
+      <p><strong>Este questionário precisa de JavaScript.</strong> Ative o JavaScript no navegador para usá-lo.</p>
+    </noscript>
+
+    <div class="quiz">
+      <div id="quiz-inicio">
+        <p>Pronto para testar seus conhecimentos?</p>
+        <button type="button" id="quiz-comecar" class="btn">Começar o questionário</button>
+      </div>
+
+      <div id="quiz-area" hidden>
+        <p id="quiz-progresso" class="quiz-progresso"></p>
+        <fieldset>
+          <legend id="quiz-pergunta" tabindex="-1"></legend>
+          <div id="quiz-opcoes"></div>
+        </fieldset>
+        <div id="quiz-feedback" class="quiz-feedback" role="status" aria-live="polite"></div>
+        <div class="quiz-acoes">
+          <button type="button" id="quiz-responder" class="btn" disabled>Responder</button>
+          <button type="button" id="quiz-proxima" class="btn" hidden>Próxima pergunta</button>
+        </div>
+      </div>
+
+      <div id="quiz-resultado" hidden>
+        <h2 id="quiz-resultado-titulo" tabindex="-1">Resultado</h2>
+        <p id="quiz-pontuacao" class="quiz-pontuacao"></p>
+        <p id="quiz-mensagem"></p>
+        <button type="button" id="quiz-refazer" class="btn">Refazer o questionário</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Conteúdo com finalidade educativa.</p>
+    <p><a href="sobre.html">Sobre o projeto e referências</a></p>
+  </footer>
+
+  <script src="../js/quiz.js" defer></script>
+  <script src="../js/main.js" defer></script>
+</body>
+</html>
